@@ -1,0 +1,168 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+/* Page styling */
+body {
+    background-color: #5b655f;
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+}
+
+
+body.switch {
+    background-color: #fdeea8;
+    color: #2e542f;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+    text-align: center;
+}
+
+h1{
+    font-family: "Lilita One", sans-serif;
+}
+
+
+h2{
+    font-family: "Lilita One", sans-serif;
+}
+
+h3{
+    font-family: "Barlow", sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #333;
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+    border-radius: 15px;
+}
+
+#banner.switch {
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+main section {
+    flex: 1;
+    border: 3px rgb(198, 198, 198) solid;
+    margin: 0 0.8em;
+    padding: 1em;
+    background-color: #355d5f;
+    border-radius: 15px;
+}
+
+#text{
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff5a5a;
+}
+
+main section.switch {
+    background-color: #aed680;
+    border: 3px rgb(251, 255, 208) solid;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: #57d7d9;
+}
+
+section a:hover {
+    background-color: #6bdddf;
+    color: #333;
+    border-radius: 15px;
+}
+
+section.switch a {
+    color: #254626;
+}
+
+section.switch a:hover {
+    background-color: #ceedab;
+    color: #524545;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: #018689;
+    color: white;
+    border: 1px solid transparent;
+    font-family: "Lilita One", sans-serif;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #67dadc;
+    cursor: pointer;
+    color: #333;
+}
+
+button.switch {
+    background-color: #ff5462;
+}
+
+button.switch:hover {
+    background-color: #ff7f54;
+    color: #333;
+}
