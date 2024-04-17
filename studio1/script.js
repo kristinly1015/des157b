@@ -86,6 +86,9 @@
                 line2.style.fontFamily= "Kaushan Script";
                 line3.style.fontFamily= "Kaushan Script";
                 line4.style.fontFamily= "Kaushan Script";
+                myVideo.pause();
+                playToggle.className = 'fa-solid fa-play';
+                playing = false;
             });
 
             sun.addEventListener('click',function(){
@@ -96,6 +99,9 @@
                 line2.style.fontFamily= "Kalam";
                 line3.style.fontFamily= "Kalam";
                 line4.style.fontFamily= "Kalam";
+                myVideo.pause();
+                playToggle.className = 'fa-solid fa-play';
+                playing = false;
             });
 
 })();
