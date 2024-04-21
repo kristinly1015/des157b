@@ -1,0 +1,42 @@
+{
+    "point1" : {
+        "time" : "Thursday, 3:37 pm",
+        "food" : "spaghetti & meatballs",
+        "review" : 2
+    },
+    "point2" : {
+        "time" : "Thursday, 8:26 pm",
+        "food" : "Mama instant ramen",
+        "review" : 3
+    },
+    "point3" : {
+        "time" : "Friday, 3:40 pm",
+        "food" : "a Bruxie hot chicken sandwich",
+        "review" : 5
+    },
+    "point4" : {
+        "time" : "Friday, 7:36 pm",
+        "food" : "leftover spaghetti & meatballs",
+        "review" : 1
+    },
+    "point5" : {
+        "time" : "Saturday, 2:54 pm",
+        "food" : "a mushroom burger",
+        "review" : 4
+    },
+    "point6" : {
+        "time" : "Saturday, 12:22 am",
+        "food" : "macaroni and cheese",
+        "review" : 3
+    },
+    "point7" : {
+        "time" : "Sunday, 2:04 pm",
+        "food" : "Spicy Tang Tang Ramen",
+        "review" : 5
+    },
+    "point8" : {
+        "time" : "Sunday, 8:10 pm",
+        "food" : "an al pastor taco",
+        "review" : 3
+    }
+}
