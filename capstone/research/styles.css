@@ -22,3 +22,22 @@ h1{
     padding: 30px;
     border-radius: 15px;
 }
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    color: rgb(0, 42, 140);
+}
+
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4em;
+}
