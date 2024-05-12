@@ -1,0 +1,123 @@
+
+body{
+    background-color: #FFE7EE;
+  }
+  
+  h1{
+      font-family: "Delicious Handrawn", cursive;
+      color: #c7063c;
+      font-size: 40px;
+
+  }
+  
+  h2{
+      font-family: "Delicious Handrawn", cursive;
+      color: #c7063c;
+      font-size: 30px;
+     margin-top: -20px;
+  }
+
+  #clear{
+    font-family: "Delicious Handrawn", cursive;
+    background-color: #FB6D96;
+    border: 2px solid #CF1249;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 70px;
+  }
+
+  #clear:hover{
+    background-color: #ff98b5;
+  }
+
+  #save{
+    font-family: "Delicious Handrawn", cursive;
+    background-color: #8AF265;
+    border: 2px solid #12CF5E;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  #save:hover{
+    background-color: #bcffa4;
+  }
+  
+  footer{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+ 
+  #container {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+  }
+  
+
+  #control{
+    margin-top: 30px;
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+  }
+
+  #left{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 50px;
+  }
+
+  #right{
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  #canvasbox {
+      padding: 10px;
+      background-color: #FFC5DD;
+      border-radius: 10px;
+  }
+  
+  #colorpalette{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px;
+      width: 190px;
+      background-color: #F7DF8C;
+      border-radius: 5px;
+  }
+  
+  #selectcolor{
+    margin-top: -40px;
+      width: 200px;
+      height: 150px;
+  }
+  
+  label{
+      margin-right: 20px;
+      font-family: "Delicious Handrawn", cursive;
+      color: #c7063c;
+      font-size: 25px;
+  }
+  
+  #colorpicker {
+      margin-bottom: 10px;
+  }
+  
+  .colorbox {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 20px;
+  }
+  
+  
+  
