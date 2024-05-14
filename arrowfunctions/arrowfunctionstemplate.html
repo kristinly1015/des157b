@@ -25,34 +25,32 @@
     </style>
 </head>
 <body>
-    <h1>Change this H1</h1>
+    <h1>Arrow Functions</h1>
 
-    <p>Add a short description of your function, what it does and where you got it. You can pull it from some other project you have, or you can create a function from scratch that does something simple and straight forward. Don't just use one of Bill and Glenda's examples though.</p>
+    <p>This function returns the names of my pets.</p>
 
     <h2>Named Function</h2>
     <code>
         <pre>
-            for( const eachTab of tabs){
-                eachTab.removeAttribute('class');
-            }
+             function pets(petname1, petname2, petname3){
+                return `My pets are ${petname1}, ${petname2}, and ${petname3}`;
+                }
         </pre>
     </code>
 
     <h2>Function Expression</h2>
     <code>
         <pre>
-            tabs.forEach(function(eachTab){
-                eachTab.removeAttribute('class');
-            });
+            const pets = function(petname1, petname2, petname3){
+                return `My pets are ${petname1}, ${petname2}, and ${petname3}`;
+            }
         </pre>
     </code>
 
     <h2>Arrow Function</h2>
     <code>
         <pre>
-            tabs.forEach ( (eachTab) => {
-                eachTab.removeAttribute('class');
-            });
+            const pets = (petname1, petname2, petname3) => `My pets are ${petname1}, ${petname2}, and ${petname3}`;
         </pre>
     </code>
 
