@@ -3,6 +3,8 @@ const screenTimeSlider = document.getElementById('screenTimeSlider');
 const character = document.getElementById('character');
 const healthBar = document.getElementById('health');
 const healthIcon = document.querySelector('.fa-heartbeat');
+const capturedValue = document.getElementById('capturedvalue');
+
 
 const healthData = {
     ageEffect: [
@@ -40,6 +42,7 @@ function findHealthValue(value, data, key) {
     return data[data.length - 1].health;
 }
 
+
 function getHealth(age, screenTime) {
     const ageHealth = findHealthValue(age, healthData.ageEffect, 'age');
     const screenTimeHealth = findHealthValue(screenTime, healthData.screenTimeEffect, 'hours');
@@ -55,6 +58,7 @@ function highlightLifeStage(age) {
         }
     }
 }
+
 
 function updateCharacterAppearance(health) {
     if (health > 75) {
@@ -86,12 +90,15 @@ function updateHealth() {
     const health = getHealth(age, screenTime);
 
     healthBar.style.width = `${health}%`;
+    capturedValue.textContent = `${screenTime} hours`;
 
     highlightLifeStage(age);
     updateCharacterAppearance(health);
+
 }
 
 ageslider.addEventListener('input', updateHealth);
 screenTimeSlider.addEventListener('input', updateHealth);
 
 updateHealth();
+

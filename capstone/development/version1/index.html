@@ -19,32 +19,33 @@
         <class id="hidden"><h2>Welcome to the screen time simulator</h2></class>
 
         <div class="overallcontainer">
+
             <div class="timeslider">
                 <label for="screenTimeSlider">Screen Time (hrs/day)</label>
                 <input type="range" min="0" max="24" value="8" id="screenTimeSlider">
-                <span id="capturedvalue">8 hours</span>
+                <div id="capturedvalue">8 hours</div>
             </div>
 
-        <div class="healthbarcontainer">
-            <div class="healthbar">
-                <div id="health"></div>
+            <div class="healthbarcontainer">
+                <div class="healthbar">
+                    <div id="health"></div>
+                </div>
+                <i class="fas fa-heartbeat"></i>
             </div>
-            <i class="fas fa-heartbeat"></i>
-        </div>
 
-        <div class="charactercontainer">
-            <div id="character">😊</div>
-        </div>
+            <div class="charactercontainer">
+                <div id="character">😊</div>
+            </div>
      
 
-        <div class="agecontainer">
-            <label for="ageslider">Age</label>
-            <input type="range" min="0" max="100" value="0" id="ageslider">
-            <div class="agelabels">
-                <span id="childLabel">Childhood</span>
-                <span id="teenLabel">Adolescence</span>
-                <span id="adultLabel">Adulthood</span>
-                <span id="seniorLabel">Old Age</span>
+            <div class="agecontainer">
+                <label for="ageslider">Age</label>
+                <input type="range" min="0" max="100" value="0" id="ageslider">
+                <div class="agelabels">
+                    <span id="childLabel">Childhood</span>
+                    <span id="teenLabel">Adolescence</span>
+                    <span id="adultLabel">Adulthood</span>
+                    <span id="seniorLabel">Old Age</span>
             </div>
         </div>
     </div>
