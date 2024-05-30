@@ -4,6 +4,7 @@ const character = document.getElementById('character');
 const healthBar = document.getElementById('health');
 const healthIcon = document.querySelector('.fa-heartbeat');
 const capturedValue = document.getElementById('capturedvalue');
+const closer = document.querySelector('.close');
 
 
 const healthData = {
@@ -59,6 +60,19 @@ function highlightLifeStage(age) {
     }
 }
 
+closer.addEventListener('click',function(event){
+    event.preventDefault();
+    document.querySelector('#overlay').className=
+    'hidden'; 
+    document.querySelector('#overlay2').className=
+    'showing'; 
+});
+
+document.querySelector('.close2').addEventListener('click',function(event){
+    event.preventDefault();
+    document.querySelector('#overlay2').className=
+    'hidden'; 
+});
 
 function updateCharacterAppearance(health) {
     if (health > 75) {

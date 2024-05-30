@@ -1,8 +1,13 @@
+alert("Hello! Welcome to the screen time simulator. Your tasks are to follow the story and 1) adjust screen time hours 2) adjust age 3) view results of character");
+
 const ageSlider = document.getElementById('ageslider');
 const screenTimeSlider = document.getElementById('screenTimeSlider');
 const character = document.getElementById('character');
 const healthBar = document.getElementById('health');
 const healthIcon = document.querySelector('.fa-heartbeat');
+const capturedValue = document.getElementById('capturedvalue');
+const closer = document.querySelector('.close');
+
 
 const healthData = {
     ageEffect: [
@@ -40,6 +45,7 @@ function findHealthValue(value, data, key) {
     return data[data.length - 1].health;
 }
 
+
 function getHealth(age, screenTime) {
     const ageHealth = findHealthValue(age, healthData.ageEffect, 'age');
     const screenTimeHealth = findHealthValue(screenTime, healthData.screenTimeEffect, 'hours');
@@ -55,6 +61,20 @@ function highlightLifeStage(age) {
         }
     }
 }
+
+closer.addEventListener('click',function(event){
+    event.preventDefault();
+    document.querySelector('#overlay').className=
+    'hidden'; 
+    document.querySelector('#overlay2').className=
+    'showing'; 
+});
+
+document.querySelector('.close2').addEventListener('click',function(event){
+    event.preventDefault();
+    document.querySelector('#overlay2').className=
+    'hidden'; 
+});
 
 function updateCharacterAppearance(health) {
     if (health > 75) {
@@ -86,12 +106,15 @@ function updateHealth() {
     const health = getHealth(age, screenTime);
 
     healthBar.style.width = `${health}%`;
+    capturedValue.textContent = `${screenTime} hours`;
 
     highlightLifeStage(age);
     updateCharacterAppearance(health);
+
 }
 
 ageslider.addEventListener('input', updateHealth);
 screenTimeSlider.addEventListener('input', updateHealth);
 
 updateHealth();
+
