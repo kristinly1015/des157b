@@ -57,7 +57,7 @@ const characterData = {
         healthy: { icon: '😊', story: 'Bob is now retired from his healthcare job of 30 years and is enjoying many vacations with his lovely wife and kids. He primarily uses his phone to capture memories and to keep up with all of his loved ones. He has developed back and joint pain due to his low bone density but uses a walker to help him moving. Although he has typical health issues due to old age, he is happy with his life achievements and has no regrets.', color: 'green' },
         moderate: { icon: '😐', story: 'Bob\'s chronic screen use has fried his brain to the point of early dementia. He lives alone and has further trouble remembering his loved ones. He still enjoys watching TV and playing digital games in his retirement. His eyesight is so blurry that wearing glasses no longer help. He is also obese and has severe joint pain, but has no one to take care of him. His outlook on life is very low and he relies on screentime to feel temporarily happy.', color: 'yellow' },
         unhealthy: { icon: '😟', story: 'Bob\'s obesity has worsened and he is now imobilized with additional heart disease. He is also diagnosed with Alzheimer\'s Disease and requires an in-home nurse for daily function. He can no longer see nor hear properly due to always blasting music into his earbuds his entire life. His past loved ones have also forgotten about him so he clings onto his phone to escape his lonely reality. Bob no longer smiles and desperately wishes he could recall fonder moments from his lifetime.', color: 'orange' },
-        critical: { icon: '😢', story: 'Bob is at the brink of death with his heart struggling to support his overweight and malnourished body. His bone density is so fragile that he can easily break a bone with the wrong step. His eyesight and hearing are basically nonexistent and his memory loss has cut off any conscious awareness. His need for screen time is useless since it takes too much energy to even use his phone. Bob truly regrets his life decisions and knows that he will have to eventually pass being unhappy and without any family support. He wishes he seeked help sooner.', color: 'red' }
+        critical: { icon: '😢', story: 'Bob is at the brink of death with his heart disease taking a toll on his body. His bone density is so fragile that he can easily break a bone with the wrong step. His eyesight and hearing are basically nonexistent and his memory loss has reduced his conscious awareness. His screen time use has exceeded all the energy he has left. Bob truly regrets his life decisions and knows that he will have to eventually pass unhappy and alone.', color: 'red' }
     }
 };
 
@@ -99,6 +99,14 @@ document.querySelector('.close2').addEventListener('click', function(event){
     event.preventDefault();
     document.querySelector('#overlay2').className = 'hidden'; 
 });
+
+
+document.querySelector('.close3').addEventListener('click', function(event){
+    event.preventDefault();
+    document.querySelector('#overlay3').className = 'hidden'; 
+});
+
+
 
 function updateCharacterAppearance(health, stage) {
     let healthStatus = 'healthy';
@@ -151,9 +159,16 @@ function updateHealth() {
     const stage = highlightLifeStage(age);
     updateCharacterAppearance(health, stage);
     updateDetailPanel(stage, health);
+
+    if (health === 0) {
+        document.querySelector('#overlay3').className = 'showing';
+    } else if (health>0){
+        document.querySelector('#overlay3').className = 'hidden';
+    }
 }
 
 ageslider.addEventListener('input', updateHealth);
 screenTimeSlider.addEventListener('input', updateHealth);
+
 
 updateHealth();

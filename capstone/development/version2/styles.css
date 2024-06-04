@@ -178,6 +178,35 @@ h3{
     z-index: 2;
 }
 
+#overlay3{
+    position: absolute;
+    background-color: rgb(0,0,0,0.5);
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+
+#overlay3 .card3{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 47%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    background: rgb(26, 26, 27);
+    color: white;
+    line-height: 1.5em;
+    border-radius: 10px;
+    padding: 50px;
+    z-index: 2;
+}
+
 .hidden {
     visibility: hidden;
     opacity: 0;
@@ -215,6 +244,21 @@ h3{
 }
 
 .close2:hover{
+    cursor: pointer;
+}
+
+.close3{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.close3:hover{
     cursor: pointer;
 }
 
