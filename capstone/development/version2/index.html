@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Capstone Project - The Impact of Screen Use</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>The Effects of Screen Time and Age</h1>
+    
+        <div id="overlay" class="hidden">
+            <article class="card">
+                <h2>Welcome to the screen time simulator</h2>
+                <h3><span class="intro">Background Context:</span>
+                    <br>
+                    Screen time use is sky-rocketing with a global average around 6 hours and 58 minutes of screen time per day, which is nearly a 50 minute increase since 2013! About half of 0 to 2-year-olds interact with smartphones and Gen Z averages around 9 hours of screen time per day. This lifestyle is damaging to one’s well-being, affecting both physical and mental health for the worse. 
+                </h3>
+                <button class="close">next</button>
+            </article>
+        </div>
+
+        <div id="overlay2" class="hidden">
+            <article class="card2">
+                <h2>It is now 2044 and Bob Bern is a young child who is already at risk of developing an addiction to his iPad at an early age.</h2>
+                <h3><span class="intro">Instructions:</span>
+                    <br>
+                    Interact with screen time use and different life stages to see how Bob's life is impacted over time.
+                </h3>
+                <button class="close2">close</button>
+            </article>
+        </div>
+ 
+
+
+        <div class="overallcontainer">
+
+            <div class="timeslider">
+                <label for="screenTimeSlider">Screen Time (hrs/day)</label>
+                <input type="range" min="0" max="24" value="8" id="screenTimeSlider">
+                <div id="capturedvalue">8 hours</div>
+            </div>
+
+            <div class="healthbarcontainer">
+                <div class="healthbar">
+                    <div id="health"></div>
+                </div>
+                <i class="fas fa-heartbeat"></i>
+            </div>
+
+        <div class="info">
+            <div id="character">😊</div>
+     
+            <div id="detailpanel">
+      
+            </div>
+        </div>
+
+            <div class="agecontainer">
+                <label for="ageslider">Age</label>
+                <input type="range" min="0" max="100" value="0" id="ageslider">
+                <div class="agelabels">
+                    <span id="childLabel">Childhood</span>
+                    <span id="teenLabel">Adolescence</span>
+                    <span id="adultLabel">Adulthood</span>
+                    <span id="seniorLabel">Old Age</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

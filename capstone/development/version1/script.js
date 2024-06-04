@@ -10,20 +10,20 @@ const closer = document.querySelector('.close');
 const healthData = {
     ageEffect: [
         { age: 0, health: 100 },
-        { age: 20, health: 90 },
+        { age: 20, health: 80 },
         { age: 40, health: 70 },
         { age: 60, health: 50 },
-        { age: 80, health: 30 },
-        { age: 100, health: 10 }
+        { age: 80, health: 0 },
+        { age: 100, health: 0 }
     ],
     screenTimeEffect: [
         { hours: 0, health: 100 },
-        { hours: 4, health: 80 },
+        { hours: 4, health: 70 },
         { hours: 8, health: 60 },
         { hours: 12, health: 40 },
         { hours: 16, health: 20 },
-        { hours: 20, health: 10 },
-        { hours: 24, health: 5 }
+        { hours: 20, health: 0 },
+        { hours: 24, health: 0 }
     ]
 };
 

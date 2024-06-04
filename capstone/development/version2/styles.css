@@ -1,0 +1,243 @@
+.overallcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.timeslider {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#screenTimeSlider {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: middle;
+    height: 300px;
+    margin: 20px 0;
+    background: #ddd;
+    outline: none;
+}
+
+.agecontainer {
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    top: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ageslider {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.agelabels {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+
+.agelabels span {
+    margin: 5px 0;
+}
+
+#childLabel{
+    padding-right: 5%;
+}
+
+#teenLabel{
+    padding-right: 1%;
+}
+
+
+#adultLabel{
+    padding-right: 30%;
+}
+
+.agelabels span.active {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+
+#character {
+    font-size: 120px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.healthbarcontainer {
+    display: flex;
+    align-items: center;
+    margin-left: 70%;
+}
+
+.healthbar {
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#health {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 100%;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.fa-heartbeat {
+    font-size: 24px;
+    color: #4CAF50;
+    transition: color 0.3s ease-in-out;
+}
+
+#overlay{
+    position: absolute;
+    background-color: rgb(0,0,0,0.5);
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+
+#overlay .card{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 47%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    background: rgb(26, 26, 27);
+    color: white;
+    line-height: 1.5em;
+    border-radius: 10px;
+    padding: 50px;
+    z-index: 2;
+}
+
+#overlay2{
+    position: absolute;
+    background-color: rgb(0,0,0,0.5);
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+
+#overlay2 .card2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 47%;
+    left: 50%;
+    width: 40%;
+    height: 40%;
+    background: rgb(26, 26, 27);
+    color: white;
+    line-height: 1.5em;
+    border-radius: 10px;
+    padding: 50px;
+    z-index: 2;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+} 
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+} 
+
+.close{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+.close2{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.close2:hover{
+    cursor: pointer;
+}
+
+.intro{
+    font-weight: bold;
+}
+
+.info{
+    margin-top: 7%;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+
+#detailpanel{
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(52, 52, 52);
+    color: white;
+}
