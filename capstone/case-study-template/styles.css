@@ -1,0 +1,115 @@
+/* CSS Resets */
+h1, h2, h3, h4, p, nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+}
+img { max-width: 100%; display: block; 
+    margin-bottom: 30px;
+    margin-top: 20px;
+    border-radius: 10px;}
+* { box-sizing: border-box;}
+
+/* end Resets */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+    color: #333;
+}
+nav {
+    border-top: 2px solid #333;
+}
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color:rgb(0, 136, 210);
+    font-weight: bold;
+    border-bottom: 2px solid #333;
+    text-align: center;
+    padding: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+header, footer {
+    background-color: black;    
+    color: white;
+}
+
+header, section, footer {
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+
+section:nth-child(even){
+    background-color: aliceblue;
+}
+
+.container {
+    max-width: 800px;
+}
+
+h1, h2 {
+    margin-bottom: .5em;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+h2{
+    color:rgb(0, 136, 210);
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+ol li {
+    margin-bottom: 1em;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    nav ul { display: flex; }
+    nav ul li { flex: 1; }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container{ margin: auto; }
+    nav ul {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .content{ 
+       margin-top: 20px;
+       width: 800px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 20px;
+    }
+
+    .column{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .set{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+}

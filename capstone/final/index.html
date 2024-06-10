@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+
+    <title>Capstone Project - The Impact of Screen Use</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="computerscreen">
+        <h1>The Effects of Screen Time and Age</h1>
+        
+            <div id="overlay" class="showing">
+                <article class="card">
+                    <div id="heading2">Welcome to the screen time simulator!</div>
+                    <br>
+                    <span class="heading">Background Context:</span>
+                        <br>
+                        <h3>
+                        Screen time use is sky-rocketing with a global average of 6 hours and 58 minutes of screen time per day, which is nearly a 50 minute increase since 2013! 
+                        About half of 0 to 2-year-olds use smartphones and Gen Z averages around 9 hours of screen time per day. This lifestyle is damaging everyone's physical and mental health for the worst. 
+                    </h3>
+                    <button class="close">next</button>
+                </article>
+            </div>
+
+            <div id="overlay2" class="hidden">
+                <article class="card2">
+                    <span class="heading">Story:</span> <br> <h3>It is currently 20 years into the future and Bob is a young child who is already at risk of developing an addiction to his digital devices at an early age!</h3>
+                    <span class="heading">Instructions:</span>
+                        <br>
+                    <h3>
+                        Interact with screen time use and different life stages to see how Bob's life is impacted over time.
+                    </h3>
+                    <button class="close2">start</button>
+                </article>
+            </div>
+
+            <div id="overlay3" class="hidden">
+                <article class="card3">
+                    <span id="headings">Bob has died!</span>
+                    <img src="images/grave.png" alt="death" width="200" height= "300">
+                    <h3>
+                        Bob has passed away due to chronic screen time use and old age. He was <span id="deathage"></span> years old and spent <span id="hoursspent"></span> hours a day on his screen. Overall, he lived a very lonely and unhealthy lifestyle. 
+                    </h3>
+                    <button class="close3">close</button>
+                </article>
+            </div>
+
+            <div id="overlay4" class="hidden">
+                <article class="card4">
+                    <span id="heading5">Sources Cited</span>
+                    <ul>
+                        <li><a href="https://explodingtopics.com/blog/screen-time-stats">Alarming Average Screen Time Statistics (2024)</a></li>
+
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6214874/">Associations between screen time and lower psychological well-being among children and adolescents</a></li>
+
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/35164464/#:~:text=Excessive%20screen%20time%20is%20known,learning%20impairments%20and%20mental%20illness">Digital dementia in the internet generation</a></li>
+
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10353947/#:~:text=Excessive%20screen%20usage%20can%20also,hinder%20social%20and%20emotional%20competence">Effects of Excessive Screen Time on Child Development</a></li>
+
+                        <li><a href="https://www.premierhealth.com/your-health/articles/health-topics/screen-addiction-affects-physical-and-mental-health">Screen Addiction Affects Physical and Mental Health</a></li>
+                    </ul>
+                    
+                    <button class="close4">close</button>
+                </article>
+            </div>
+    
+
+            <div class="overallcontainer">
+
+                <div class="timeslider">
+                    <span id="heading4">Adjust Data to View Effects</span>
+                    <label for="screenTimeSlider">Screen Time (hrs/day) &nbsp; <i class="fas fa-mobile-alt"></i></label> 
+                    <div class="timecontainer">
+                    <input type="range" min="0" max="24" value="8" id="screenTimeSlider">
+                    <div id="capturedvalue">8 hours</div>
+                    </div>
+
+                    
+                    <label for="ageslider">Age &nbsp; <i class="fas fa-hourglass-half"></i></label>
+                    <div class="agecontainer">
+                    <input type="range" min="0" max="100" value="0" id="ageslider">
+                    <div class="agelabels">
+                        <span id="childLabel">Childhood</span>
+                        <span id="teenLabel">Adolescence</span>
+                        <span id="adultLabel">Adulthood</span>
+                        <span id="seniorLabel">Old Age</span>   
+                    </div>
+                    <div id="capturedvalue2"></div>
+                </div>
+                    <button id="reset">reset</button>
+                </div>
+
+                <div class="healthbarcontainer">
+                    <div id="warning" class="warning">WARNING!</div>
+                    <div class="healthbar">
+                        <div id="health"></div>
+                    </div>
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+
+            <div class="info">
+                <div id="character">
+                    <img id="characterimg" src="#" width="340" height= "440" alt="character image">
+                </div>
+     
+                <div id="detailpanel">
+        
+                </div>
+            </div>
+
+
+            <footer><h4>References</h4></footer>
+        </div>
+    </div>
+
+</body>
+</html>
